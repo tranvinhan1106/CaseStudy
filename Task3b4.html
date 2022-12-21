@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3 Bài 3</title>
+</head>
+<body>
+    <form>
+        <fieldset style="width: 140px" >
+            <legend><span>MENU</span></legend>
+            <input type="checkbox" id="drinks1"  onclick="choose()"><label for="drinks1">1.Cafe</label><br>
+            <input type="checkbox" id="drinks2"  onclick="choose2()"><label for="drinks2">2.Cam vắt</label><br>
+            <input type="checkbox" id="drinks3"  onclick="choose3()"><label for="drinks3">3.Nước ép cà rốt</label><br>
+            <input type="checkbox" id="drinks4"  onclick="choose4()"><label for="drinks4">4.Nước ép cà chua</label> <br>
+            <input type="checkbox" id="drinks5"  onclick="choose5()"><label for="drinks5">5.Nước lọc</label> <br>
+            <input type="checkbox" id="drinks6"  onclick="choose6()"><label for="drinks6">6.Nước dừa</label> <br>
+            <input type="checkbox" id="drinks7" onclick="choose7()"><label for="drinks7">7.Thoát gọi món</label> <br>
+        </fieldset>
+        <br>
+    </form>
+</body>
+    <script>
+        function choose() {
+            alert(" Giá của sản phầm là 20000 đồng !" );
+            let a = +prompt("Vui lòng nhập số lượng :");
+            alert( "Tổng số tiền bạn cần thanh toán là : "+a*20000 +" đồng !");
+        }
+        function choose2() {
+            alert("Giá của sản phẩm là 25000 đồng ! ");
+            let b = +prompt("Vui lòng nhập số lượng :");
+            alert("Tổng số tiền bạn cần thanh toán là : "+b*25000 + " đồng !")
+        }
+        function choose3() {
+            alert(" Giá của sản phầm là 25000 đồng !" );
+            let c = +prompt("Vui lòng nhập số lượng :");
+            alert( "Tổng số tiền bạn cần thanh toán là : "+c*25000 +" đồng !");
+        }
+        function choose4() {
+            alert(" Giá của sản phầm là 20000 đồng !" );
+            let d = +prompt("Vui lòng nhập số lượng :");
+            alert( "Tổng số tiền bạn cần thanh toán là : "+d*20000 +" đồng !");
+        }
+        function choose5() {
+            alert(" Giá của sản phầm là 10000 đồng !" );
+            let e = +prompt("Vui lòng nhập số lượng :");
+            alert( "Tổng số tiền bạn cần thanh toán là : "+e*10000 +" đồng !");
+        }
+        function choose6() {
+            alert(" Giá của sản phầm là 15000 đồng !" );
+            let f = +prompt("Vui lòng nhập số lượng :");
+            alert( "Tổng số tiền bạn cần thanh toán là : "+f*15000 +" đồng !");
+        }
+        function choose7() {
+            alert("Cảm ơn quý khách" );
+        }
+
+    </script>
+</html>
