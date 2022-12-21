@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task3 Bài 1</title>
+</head>
+<body>
+        <script>
+
+
+            function prefixSums(arrA,arrB) {
+                for (let i = 0; i <arrA.length && arrB.length ; i++) {
+                }
+                return   arrB[0]   = arrA[0],
+                arrB[1]   = arrA[0] + arrA[1],
+                arrB[2]   = arrA[0] + arrA[1] + arrA[2];
+            }
+            let arrA =[];
+            for (let i = 0; i < 3; i++) {
+                arrA[i] = +prompt("Nhập mảng A vào đây");
+            }
+            let arrB =[];
+            prefixSums(arrA,arrB);
+            alert("Ta được mảng B là :"+ arrB);
+
+        </script>
+</body>
+</html>
