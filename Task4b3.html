@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task4 Bài 3</title>
+</head>
+<body>
+        <script>
+            let textA = prompt("Nhập vào sâu thứ nhất :");
+            let textB = prompt("nhập vào sâu thứ hai :");
+            function characterCount(textA,textB) {
+                const arrA = textA.split("");
+                const arrB = textB.split("");
+                let obj ={};
+                for (let i = 0; i < arrB.length; i++) {
+                    const index = arrA.indexOf(arrB[i]);
+                    if (index >= 0) {
+                        if (obj[arrB[i]]) {
+                            obj[arrB[i]] +=1;
+                        } else {
+                            obj[arrB[i]] = 1;
+                        }
+                        arrA.splice(index, 1);
+                    }
+                }
+                let sum = 0 ;
+                let str = "";
+                for (let k of Object.keys(obj)) {
+                    str +=obj[k] + " kí tự " + k   ;
+                    sum+=obj[k]
+                }
+                document.write("Có " + sum + " kí tự chung :" +str)
+            }
+            characterCount(textA,textB);
+        </script>
+</body>
+</html>
