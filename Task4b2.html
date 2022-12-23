@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task4 Bài 2</title>
+</head>
+<body>
+        <script>
+            let a =prompt("Nhập sâu kí tự bạn muốn đếm :")
+            function characterCount(a) {
+                let count = 0;
+                for (let i = 0; i < a.length; i++) {
+                    if (a[0]!==a[i]){
+                        count++;
+                    }
+                }
+                return count;
+            }
+            let value = characterCount(a);
+            document.write("Số lượng kí tự khác nhau là :" + value);
+        </script>
+</body>
+</html>
