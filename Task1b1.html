@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task1 Bài 1</title>
+</head>
+<body>
+        <script>
+            let money = +prompt("Nhập lương vào đây :")
+           if (money===15000000){
+               document.write("Thuế thu nhập của bạn là 20% và tiền lương bạn thực sự nhận được là :"+(money-(money*20/100)))
+           }else if (money>7000000 && money<15000000){
+               document.write("Thuế thu nhập của bạn là 10% và tiền lương bạn thực sự nhận được là :"+(money-(money*10/100)))
+           }else if (money<7000000){
+               document.write("Thuế thu nhập của bạn là 5% và tiền lương bạn thực sự nhận được là :"+(money-(money*5/100)))
+           }
+        </script>
+</body>
+</html>
