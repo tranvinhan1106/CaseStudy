@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task5 Bài 1</title>
+</head>
+<body>
+<script>
+    function evenTotal(m,n){
+        for (let i = 0; i < m ; i++) {
+            arr[i]=[];
+            for (let j = 0; j < n; j++) {
+                arr[i][j] = +prompt("Nhập giá trị dòng "+ i +" Cột "+ j);
+            }
+        }
+        let sumEven = 0;
+        for (let i = 0; i < m ; i++) {
+            for (let j = 0; j < n ; j++) {
+                if(arr[i][j]%2===0){
+                    sumEven+=arr[i][j];
+                }
+            }
+        }
+        return sumEven;
+    }
+    let arr = [[]];
+    let m = +prompt("Nhập số dòng :");
+    let n = +prompt("Nhập số cột :");
+    let value = evenTotal(m,n)
+    alert("Tổng số chẵn trong ma trận là : " + value)
+</script>
+</body>
+</html>
